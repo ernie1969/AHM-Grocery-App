@@ -25,6 +25,7 @@ function addItem(Item, isCompleted = false) {
 
     const checkBox = document.createElement('input');
     checkBox.setAttribute('type', 'checkbox');
+    checkBox.setAttribute('id', 'checkbox');
     listItem.appendChild(checkBox);
 
     const deleteButton = document.createElement('button');
