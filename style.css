@@ -1,0 +1,95 @@
+/* Author: AdHubManila
+    Contact No: +63 995 001 6415 / +63 938 351 6468
+    Email: adhubmanila@gmail.com
+    Web URL: https://adhubmanila.hstn.me 
+*/
+
+body {
+    align-items: center;
+    background: linear-gradient(to right, #6DD5FA, #FF758C);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial Narrow', sans-serif;
+    height: auto;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  .AHM-grocery-app {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 0 45px 25px 30px;
+    text-align: center;
+  }
+  
+  .grocery-form input[type="text"] {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .grocery-form button {
+    background-color: #ff7949;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+  }
+  
+  .grocery-form button:hover {
+    background-color: #ff4500;
+  }
+  
+  .container{
+    list-style: none;
+    margin-top: 0;
+    max-width: 400px;
+    padding: 0;
+    width: 90%;
+  }
+  
+  .container li {
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .container li span {
+    flex-grow: 1;
+    margin-right: 10px;
+    text-align: left;
+  }
+  
+  .container li button {
+    margin-left: 5px;
+    padding: 5px 10px;
+  }
+  
+  .container .completed span {
+    background-color: #ffe0e0;
+    border-radius: 3px;
+    opacity: 0.7;
+    padding: 2px 5px;
+    text-decoration: line-through;
+    text-decoration-color: #ff0000;
+  }
+  
+  .container .editing input[type="text"] {
+      flex-grow: 1;
+      margin-right: 10px;
+      padding: 5px;
+  }
