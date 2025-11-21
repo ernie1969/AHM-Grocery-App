@@ -1,3 +1,21 @@
+// Registering Service Worker
+if ("serviceWorker" in navigator) {
+    console.log("Attempting to register Service Worker..."); // <-- NEW: Check if the IF block is running
+    navigator.serviceWorker
+    .register("sw.js", { scope: './' })
+    .then((registration) => {
+        console.log("SUCCESS! Service Worker registered! 😎 Scope:", registration.scope); // <-- Modified message
+    })
+    .catch((error) => {
+        console.log("FAILURE! Service Worker registration failed."); // <-- NEW: Error log
+        console.error(error); 
+    });
+} else {
+    console.warn("Service Workers are NOT supported in this browser."); // <-- NEW: Check for browser support
+}
+
+
+// Start of AHM-Grocery-App
 const groceryForm = document.getElementById('grocery-form');
 const groceryInput = document.getElementById('grocery-input');
 const groceryList = document.getElementById('grocery-list');
@@ -25,7 +43,6 @@ function addItem(Item, isCompleted = false) {
 
     const checkBox = document.createElement('input');
     checkBox.setAttribute('type', 'checkbox');
-    checkBox.setAttribute('id', 'checkbox');
     listItem.appendChild(checkBox);
 
     const deleteButton = document.createElement('button');

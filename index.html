@@ -2,36 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AHM Grocery List</title>
-    <link rel="icon" href="images/icon-192.ico">
+
+    <link rel="icon" href="images/icon-192.png">
     <link rel="stylesheet" href="style.css">
-    
-    <meta name="theme-color" content="#317EFB"/>
+    <link rel="manifest" href="manifest.json">
+
 </head>
 <body>
     <main class="AHM-grocery-app">
-      <h1>AHM Grocery List</h1>
-      <form id="grocery-form" class="grocery-form">
-          <input type="text" id="grocery-input" placeholder="Add a new item...">
-          <button type="submit">Add Item</button>
-      </form>
+        <h1>AHM Grocery List</h1>
+        <form id="grocery-form" class="grocery-form">
+            <input type="text" id="grocery-input" placeholder="Add a new item...">
+            <button type="submit">Add Item</button>
+        </form>
     </main>
-    <ul id="grocery-list" class="container">
-        <!-- Items will be added here -->
-    </ul>
+        <ul id="grocery-list" class="container">
+            <!-- Items will be added here -->
+        </ul>
       
-    <script>
-      // Service Worker
-        if ('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-            navigator.serviceWorker.register('sw.js')
-              .then(registration => console.log('Service Worker registered: ', registration.scope))
-              .catch(err => console.log('Service Worker registration failed: ', err));
-          });
-        }
-      </script>
     <script src="main.js"></script>
 </body>
 </html>
